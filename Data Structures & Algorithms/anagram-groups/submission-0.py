@@ -5,3 +5,4 @@ class Solution:
             sorted_word=''.join(sorted(word))
             anagram_map[sorted_word].append(word)
         return list(anagram_map.values())
+

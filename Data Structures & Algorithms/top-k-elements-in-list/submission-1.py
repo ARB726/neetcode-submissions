@@ -1,7 +1,7 @@
+from collections import Counter
+from typing import List
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        # Count frequency of each number
         count = Counter(nums)
-        
-        # Get the k most common elements
         return [num for num, _ in count.most_common(k)]
